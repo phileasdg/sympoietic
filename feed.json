@@ -10,6 +10,72 @@
     },
     "items": [
         {
+            "id": "https://phileasdg.github.io/sympoietic/rules.html",
+            "url": "https://phileasdg.github.io/sympoietic/rules.html",
+            "title": "Rules:",
+            "summary": "drafting document for the rules and principles behind this project, and designed to make this project work.",
+            "content_html": "<p>drafting document for the rules and principles behind this project, and designed to make this project work.</p>",
+            "author": {
+                "name": "sympoietic art collective"
+            },
+            "tags": [
+            ],
+            "date_published": "2024-09-28T19:16:27-04:00",
+            "date_modified": "2024-09-28T19:16:27-04:00"
+        },
+        {
+            "id": "https://phileasdg.github.io/sympoietic/digital-gallery.html",
+            "url": "https://phileasdg.github.io/sympoietic/digital-gallery.html",
+            "title": "Digital Gallery",
+            "summary": "A gallery of art produced in the context of this project",
+            "content_html": "<p>A gallery of art produced in the context of this project</p>",
+            "author": {
+                "name": "sympoietic art collective"
+            },
+            "tags": [
+            ],
+            "date_published": "2024-09-28T19:15:48-04:00",
+            "date_modified": "2024-09-28T19:15:48-04:00"
+        },
+        {
+            "id": "https://phileasdg.github.io/sympoietic/for-members-resources.html",
+            "url": "https://phileasdg.github.io/sympoietic/for-members-resources.html",
+            "title": "For Members (Resources)",
+            "author": {
+                "name": "sympoietic art collective"
+            },
+            "tags": [
+            ],
+            "date_published": "2024-09-28T19:14:52-04:00",
+            "date_modified": "2024-09-28T19:14:52-04:00"
+        },
+        {
+            "id": "https://phileasdg.github.io/sympoietic/current-members.html",
+            "url": "https://phileasdg.github.io/sympoietic/current-members.html",
+            "title": "Current Members",
+            "author": {
+                "name": "sympoietic art collective"
+            },
+            "tags": [
+            ],
+            "date_published": "2024-09-28T19:14:22-04:00",
+            "date_modified": "2024-09-28T19:14:22-04:00"
+        },
+        {
+            "id": "https://phileasdg.github.io/sympoietic/artists.html",
+            "url": "https://phileasdg.github.io/sympoietic/artists.html",
+            "title": "Artists",
+            "summary": "all members, past and present link to present members",
+            "content_html": "<p>all members, past and present</p>\n<p>link to present members</p>",
+            "author": {
+                "name": "sympoietic art collective"
+            },
+            "tags": [
+            ],
+            "date_published": "2024-09-28T19:13:37-04:00",
+            "date_modified": "2024-09-28T19:14:13-04:00"
+        },
+        {
             "id": "https://phileasdg.github.io/sympoietic/sympoietic-art-manifesto.html",
             "url": "https://phileasdg.github.io/sympoietic/sympoietic-art-manifesto.html",
             "title": "Sympoietic Art Manifesto",
