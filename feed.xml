@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+    <title>sympoietic</title>
+    <link href="https://phileasdg.github.io/sympoietic/feed.xml" rel="self" />
+    <link href="https://phileasdg.github.io/sympoietic" />
+    <updated>1969-12-31T19:00:00-05:00</updated>
+    <author>
+        <name>sympoietic art collective</name>
+    </author>
+    <id>https://phileasdg.github.io/sympoietic</id>
+
+</feed>

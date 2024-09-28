@@ -1,0 +1,13 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "sympoietic",
+    "description": "",
+    "home_page_url": "https://phileasdg.github.io/sympoietic",
+    "feed_url": "https://phileasdg.github.io/sympoietic/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "sympoietic art collective"
+    },
+    "items": [
+    ]
+}
