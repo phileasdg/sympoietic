@@ -10,6 +10,32 @@
     },
     "items": [
         {
+            "id": "https://phileasdg.github.io/sympoietic/about.html",
+            "url": "https://phileasdg.github.io/sympoietic/about.html",
+            "title": "About",
+            "summary": "general information about the project",
+            "content_html": "<p>general information about the project</p>",
+            "author": {
+                "name": "sympoietic art collective"
+            },
+            "tags": [
+            ],
+            "date_published": "2024-09-28T19:44:35-04:00",
+            "date_modified": "2024-09-28T19:44:35-04:00"
+        },
+        {
+            "id": "https://phileasdg.github.io/sympoietic/sympoietic-art-genealogies.html",
+            "url": "https://phileasdg.github.io/sympoietic/sympoietic-art-genealogies.html",
+            "title": "Sympoietic Art Genealogies",
+            "author": {
+                "name": "sympoietic art collective"
+            },
+            "tags": [
+            ],
+            "date_published": "2024-09-28T19:42:57-04:00",
+            "date_modified": "2024-09-28T19:42:57-04:00"
+        },
+        {
             "id": "https://phileasdg.github.io/sympoietic/rules.html",
             "url": "https://phileasdg.github.io/sympoietic/rules.html",
             "title": "Rules:",
