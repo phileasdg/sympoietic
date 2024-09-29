@@ -3,7 +3,7 @@
     <title>sympoietic</title>
     <link href="https://phileasdg.github.io/sympoietic/feed.xml" rel="self" />
     <link href="https://phileasdg.github.io/sympoietic" />
-    <updated>2024-09-28T20:23:25-04:00</updated>
+    <updated>2024-09-29T02:45:38-04:00</updated>
     <author>
         <name>sympoietic art collective</name>
     </author>
@@ -32,12 +32,13 @@
         <updated>2024-09-28T19:09:32-04:00</updated>
             <summary>
                 <![CDATA[
-                    lorem ipsum et cetera
+                    The manifesto will be assembled from contributions from each founding member of the sympoietic art collective. It will be its&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>lorem ipsum et cetera</p>
+                <p>The manifesto will be assembled from contributions from each founding member of the sympoietic art collective. It will be its own record of our meta-artistic intent, and art object. It will be available as part of the artistic commons we are growing.</p>
+<p>The goal of this project is to grow an art organism. To cultivate an art ecosystem by drawing from and enriching shared artistic commons. To showcase art that mixes media and visions, that brings out the analog from digital, and digitizes the analog.</p>
             ]]>
         </content>
     </entry>
