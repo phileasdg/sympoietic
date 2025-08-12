@@ -341,7 +341,7 @@
     const Graph = ForceGraph3D()(document.getElementById('3d-graph'))
       .graphData(gData)
       .nodeThreeObject(node => {
-        const texture = new THREE.TextureLoader().load(`./imgs/${node.img}`);
+        const texture = new THREE.TextureLoader().load(`./art-thumbnails/${node.img}`);
         texture.colorSpace = THREE.SRGBColorSpace;
         const material = new THREE.SpriteMaterial({ map: texture });
         const sprite = new THREE.Sprite(material);
