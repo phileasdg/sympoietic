@@ -3,12 +3,36 @@
     <title>Sympoietic Art Organism</title>
     <link href="https://phileasdg.github.io/sympoietic/feed.xml" rel="self" />
     <link href="https://phileasdg.github.io/sympoietic" />
-    <updated>2025-11-03T11:24:30-05:00</updated>
+    <updated>2025-11-03T11:35:28-05:00</updated>
     <author>
         <name>The sympoietic art organism collective</name>
     </author>
     <id>https://phileasdg.github.io/sympoietic</id>
 
+    <entry>
+        <title>Louison Halgand</title>
+        <author>
+            <name>The sympoietic art organism collective</name>
+        </author>
+        <link href="https://phileasdg.github.io/sympoietic/louison-halgand.html"/>
+        <id>https://phileasdg.github.io/sympoietic/louison-halgand.html</id>
+
+        <updated>2025-11-03T11:35:28-05:00</updated>
+            <summary></summary>
+        <content></content>
+    </entry>
+    <entry>
+        <title>Emerson Paquette</title>
+        <author>
+            <name>The sympoietic art organism collective</name>
+        </author>
+        <link href="https://phileasdg.github.io/sympoietic/emerson-paquette.html"/>
+        <id>https://phileasdg.github.io/sympoietic/emerson-paquette.html</id>
+
+        <updated>2025-11-03T11:35:02-05:00</updated>
+            <summary></summary>
+        <content></content>
+    </entry>
     <entry>
         <title>Ellynne Dec</title>
         <author>

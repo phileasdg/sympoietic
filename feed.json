@@ -10,6 +10,30 @@
     },
     "items": [
         {
+            "id": "https://phileasdg.github.io/sympoietic/louison-halgand.html",
+            "url": "https://phileasdg.github.io/sympoietic/louison-halgand.html",
+            "title": "Louison Halgand",
+            "author": {
+                "name": "The sympoietic art organism collective"
+            },
+            "tags": [
+            ],
+            "date_published": "2025-11-03T11:35:28-05:00",
+            "date_modified": "2025-11-03T11:35:28-05:00"
+        },
+        {
+            "id": "https://phileasdg.github.io/sympoietic/emerson-paquette.html",
+            "url": "https://phileasdg.github.io/sympoietic/emerson-paquette.html",
+            "title": "Emerson Paquette",
+            "author": {
+                "name": "The sympoietic art organism collective"
+            },
+            "tags": [
+            ],
+            "date_published": "2025-11-03T11:35:02-05:00",
+            "date_modified": "2025-11-03T11:35:02-05:00"
+        },
+        {
             "id": "https://phileasdg.github.io/sympoietic/ellynne-dec-2.html",
             "url": "https://phileasdg.github.io/sympoietic/ellynne-dec-2.html",
             "title": "Ellynne Dec",
