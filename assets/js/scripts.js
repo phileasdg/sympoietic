@@ -231,6 +231,9 @@ window.addEventListener('scroll', function (e) {
      * Function used to init mobile menu - sidebar mode
      */
     function initMobileMenuSidebar () {
+        var button = document.querySelector(config.buttonSelector);
+        if (!button) return;
+
         // Create menu structure
         var menuWrapper = document.createElement('div');
         menuWrapper.classList.add(config.mobileMenuSidebarClass);
@@ -244,11 +247,51 @@ window.addEventListener('scroll', function (e) {
         }
 
         menuContentHTML += document.querySelector(config.menuSelector).outerHTML;
-        menuWrapper.innerHTML = menuContentHTML;
+
+        // Create sidebar header (close button)
+        var sidebarHeader = document.createElement('div');
+        sidebarHeader.classList.add('mobile-sidebar-header');
+        var closeButton = document.createElement('button');
+        closeButton.classList.add('mobile-sidebar-close');
+        closeButton.innerHTML = '&times;';
+        closeButton.setAttribute('aria-label', 'Close menu');
+        sidebarHeader.appendChild(closeButton);
+        menuWrapper.appendChild(sidebarHeader);
+
+        // Create container for the menu
+        var menuContainer = document.createElement('div');
+        menuContainer.classList.add('mobile-menu-container');
+        menuContainer.innerHTML = menuContentHTML;
+        menuWrapper.appendChild(menuContainer);
 
         var menuOverlay = document.createElement('div');
         menuOverlay.classList.add(config.mobileMenuSidebarOverlayClass);
         menuOverlay.classList.add(config.hiddenElementClass);
+
+        // Create footer for the theme toggle
+        var themeToggleBtn = document.querySelector('.js-theme-toggle');
+        if (themeToggleBtn) {
+            var footerContainer = document.createElement('div');
+            footerContainer.classList.add('mobile-menu-footer');
+
+            var mobileThemeToggle = themeToggleBtn.cloneNode(true);
+            mobileThemeToggle.classList.add('mobile-theme-toggle');
+            
+            // Add a label
+            var toggleLabel = document.createElement('span');
+            toggleLabel.classList.add('mobile-theme-toggle-label');
+            toggleLabel.textContent = 'Switch Theme';
+            mobileThemeToggle.appendChild(toggleLabel);
+
+            footerContainer.appendChild(mobileThemeToggle);
+            menuWrapper.appendChild(footerContainer);
+
+            // Wire event to the original theme toggle
+            mobileThemeToggle.addEventListener('click', function(e) {
+                e.stopPropagation();
+                themeToggleBtn.click();
+            });
+        }
 
         document.body.appendChild(menuOverlay);
         document.body.appendChild(menuWrapper);
@@ -274,8 +317,14 @@ window.addEventListener('scroll', function (e) {
             document.documentElement.classList.remove(config.noScrollClass);
         });
 
-        // Init button events
-        var button = document.querySelector(config.buttonSelector);
+        closeButton.addEventListener('click', function(e) {
+            e.stopPropagation();
+            menuWrapper.classList.add(config.hiddenElementClass);
+            menuOverlay.classList.add(config.hiddenElementClass);
+            button.classList.remove(config.openedMenuClass);
+            button.setAttribute(config.ariaButtonAttribute, false);
+            document.documentElement.classList.remove(config.noScrollClass);
+        });
 
         button.addEventListener('click', function () {
             menuWrapper.classList.toggle(config.hiddenElementClass);
