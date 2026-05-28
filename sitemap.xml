@@ -2,14 +2,11 @@
 <?xml-stylesheet type="text/xsl" href="https://phileasdg.github.io/sympoietic/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 <url>
-<loc>https://phileasdg.github.io/sympoietic/</loc>
-</url>
-<url>
 <loc>https://phileasdg.github.io/sympoietic/about.html</loc>
 <lastmod>2025-12-27T11:19:06-05:00</lastmod>
 </url>
 <url>
-<loc>https://phileasdg.github.io/sympoietic/digital-gallery.html</loc>
+<loc>https://phileasdg.github.io/sympoietic/</loc>
 <lastmod>2025-11-17T03:28:46-05:00</lastmod>
 <image:image>
 <image:loc>https://phileasdg.github.io/sympoietic/media/posts/5/Screenshot-2025-08-12-at-17.21.10.png</image:loc>
@@ -2505,10 +2502,7 @@
 </image:image>
 </url>
 <url>
-<loc>https://phileasdg.github.io/sympoietic/manifesto.html</loc>
-<lastmod>2026-01-05T11:51:37-05:00</lastmod>
-</url>
-<url>
+
 <loc>https://phileasdg.github.io/sympoietic/nadine-abd-el-razek.html</loc>
 <lastmod>2025-11-17T03:12:16-05:00</lastmod>
 <image:image>
