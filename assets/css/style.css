@@ -1048,6 +1048,7 @@ body.dark-mode .navbar_mobile_sidebar {
   justify-content: flex-end;
   align-items: center;
   margin-bottom: 1.5rem;
+  flex-shrink: 0 !important;
 }
 
 .mobile-sidebar-close {
@@ -1074,6 +1075,7 @@ body.dark-mode .navbar_mobile_sidebar {
 
 .mobile-menu-container {
   flex-grow: 1;
+  flex-shrink: 0 !important;
 }
 
 /* Menu links & list items */
@@ -1178,6 +1180,8 @@ body.dark-mode .navbar_mobile_sidebar .navbar__submenu {
   border-top: 1px solid var(--light);
   padding-top: 1.5rem;
   margin-top: 2rem;
+  padding-bottom: 5rem !important; /* Ensure it is fully scrollable above safe areas */
+  flex-shrink: 0 !important;
 }
 
 body.dark-mode .mobile-menu-footer {
