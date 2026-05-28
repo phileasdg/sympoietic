@@ -930,20 +930,21 @@ body.dark-mode .theme-toggle-btn .theme-icon-moon { display: none; }
 
 /* --- Research Page Collapsible Accordions & Highlights --- */
 .research-accordion {
-  margin-top: 1.8rem;
-  border-top: 1px solid var(--light);
-  padding-top: 1.2rem;
-}
-
-.research-accordion:first-of-type {
-  border-top: none !important;
-  margin-top: 0 !important;
-  padding-top: 0 !important;
+  margin-top: 1.5rem;
+  background: var(--white);
+  border: 1px solid var(--light);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .research-accordion summary {
   cursor: pointer;
   font-family: var(--body-font);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--headings-color);
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -957,65 +958,25 @@ body.dark-mode .theme-toggle-btn .theme-icon-moon { display: none; }
   display: none; /* Hide default browser arrow */
 }
 
+.research-accordion summary:hover {
+  color: var(--color);
+}
+
 .research-accordion summary .accordion-arrow {
   display: inline-block;
   transition: transform 0.2s ease;
   font-size: 0.75rem;
+  color: var(--color);
 }
 
 .research-accordion[open] summary .accordion-arrow {
   transform: rotate(90deg);
 }
 
-/* Primary Accordion (Open by Default) */
-.research-accordion--primary summary {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--headings-color);
-  margin-bottom: 0.5rem;
-}
-
-.research-accordion--primary summary:hover {
-  color: var(--color);
-}
-
-.research-accordion--primary summary .accordion-arrow {
-  color: var(--color);
-  font-size: 0.9rem;
-}
-
-.research-accordion--primary .research-accordion__content {
-  margin-top: 0.5rem;
-  background: transparent;
-  border: none;
-  padding: 0;
-  box-shadow: none;
-  animation: researchSlideDown 0.25s ease-out forwards;
-}
-
-/* Secondary Accordion (Closed by Default) */
-.research-accordion--secondary summary {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--color);
-}
-
-.research-accordion--secondary summary:hover {
-  color: var(--text-color);
-}
-
-.research-accordion--secondary summary .accordion-arrow {
-  color: var(--color);
-  font-size: 0.7rem;
-}
-
-.research-accordion--secondary .research-accordion__content {
+.research-accordion__content {
   margin-top: 1rem;
-  background: var(--white);
-  border: 1px solid var(--light);
-  border-radius: var(--border-radius);
-  padding: 1.5rem;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+  border-top: 1px dashed var(--light);
+  padding-top: 1rem;
   animation: researchSlideDown 0.25s ease-out forwards;
 }
 
@@ -1029,6 +990,7 @@ body.dark-mode .theme-toggle-btn .theme-icon-moon { display: none; }
     transform: translateY(0);
   }
 }
+
 
 
 
