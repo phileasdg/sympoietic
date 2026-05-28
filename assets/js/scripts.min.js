@@ -300,6 +300,20 @@ window.addEventListener('scroll', function (e) {
         if (config.mobileMenuExpandableSubmenus) {
             wrapSubmenusIntoContainer(menuWrapper);
             initToggleSubmenu(menuWrapper);
+
+            // Make all submenus start expanded by default in the sidebar
+            var submenus = menuWrapper.querySelectorAll('.' + config.mobileMenuSubmenuWrapperClass);
+            for (var k = 0; k < submenus.length; k++) {
+                submenus[k].classList.add(config.openedMenuClass);
+                var content = submenus[k].firstElementChild;
+                if (content) {
+                    content.setAttribute('aria-hidden', false);
+                }
+                var parentLink = submenus[k].parentNode.firstElementChild;
+                if (parentLink) {
+                    parentLink.setAttribute('aria-expanded', true);
+                }
+            }
         } else {
             setAriaForSubmenus(menuWrapper);
         }

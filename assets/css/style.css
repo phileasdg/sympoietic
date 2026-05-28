@@ -999,6 +999,7 @@ body.dark-mode .theme-toggle-btn .theme-icon-moon { display: none; }
   }
   .logo {
     text-align: left !important;
+    font-size: 1.05rem !important;
   }
   .navbar {
     justify-self: end !important;
@@ -1111,11 +1112,16 @@ body.dark-mode .navbar_mobile_sidebar .navbar__menu li {
 
 /* Sidebar Submenus */
 .navbar_mobile_sidebar .navbar__submenu {
-  margin: 0.5rem 0 0.5rem 1rem !important;
-  padding: 0.25rem 0 !important;
-  border-left: 2px solid var(--color) !important;
-  background: transparent !important;
+  margin: 0.5rem 0 0.8rem 0 !important;
+  padding: 0.4rem 0 !important;
+  border-left: 3px solid var(--color) !important;
+  background: rgba(0, 0, 0, 0.02) !important;
+  border-radius: 4px !important;
   box-shadow: none !important;
+}
+
+body.dark-mode .navbar_mobile_sidebar .navbar__submenu {
+  background: rgba(255, 255, 255, 0.02) !important;
 }
 
 .navbar_mobile_sidebar .navbar__submenu li {
@@ -1123,16 +1129,48 @@ body.dark-mode .navbar_mobile_sidebar .navbar__menu li {
 }
 
 .navbar_mobile_sidebar .navbar__submenu li a {
-  font-size: 0.95rem !important;
-  padding: 0.4rem 0 0.4rem 0.8rem !important;
+  font-size: 0.9rem !important;
+  font-weight: 500 !important;
+  padding: 0.45rem 1rem !important;
   color: var(--text-color) !important;
-  opacity: 0.8 !important;
+  opacity: 0.75 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  transition: all 0.2s ease !important;
+}
+
+.navbar_mobile_sidebar .navbar__submenu li a::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background-color: var(--headings-color);
+  border-radius: 50%;
+  opacity: 0.4;
+  transition: all 0.2s ease;
 }
 
 .navbar_mobile_sidebar .navbar__submenu li a:hover {
   opacity: 1 !important;
   color: var(--color) !important;
-  padding-left: 12px !important;
+  padding-left: 1.2rem !important;
+  background: rgba(var(--color-rgb), 0.05) !important;
+}
+
+.navbar_mobile_sidebar .navbar__submenu li a:hover::before {
+  background-color: var(--color) !important;
+  opacity: 1 !important;
+  transform: scale(1.5);
+}
+
+/* Category header chevron arrow transition */
+.navbar_mobile_sidebar .navbar__menu li a[aria-haspopup=true]::after {
+  transition: transform 0.2s ease !important;
+}
+
+.navbar_mobile_sidebar .navbar__menu li a[aria-haspopup=true][aria-expanded=true]::after {
+  transform: rotate(180deg) !important;
 }
 
 /* Sidebar Footer (Theme Toggle) */
