@@ -486,6 +486,36 @@ body.with-hero-slideshow {
   transform: none !important;
 }
 
+/* Acknowledgements Section on About Page */
+.about-acknowledgements {
+  margin-top: 3.5rem;
+  margin-bottom: 2rem;
+  padding: 2rem !important;
+  background-color: var(--lighter) !important;
+  border: 1px solid var(--light) !important;
+  border-left: 4px solid var(--color) !important;
+  border-radius: var(--border-radius) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.01) !important;
+}
+
+.about-acknowledgements__title {
+  margin-top: 0 !important;
+  font-size: 0.8rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+  color: var(--gray-2) !important;
+  margin-bottom: 0.8rem !important;
+}
+
+.about-acknowledgements__text {
+  font-size: 0.8rem !important;
+  line-height: 1.6 !important;
+  color: var(--gray-2) !important;
+  margin: 0 !important;
+  opacity: 0.9 !important;
+}
+
 /* Manifesto Collapsible Panel */
 .manifesto-collapsible {
   margin-top: 3rem;
