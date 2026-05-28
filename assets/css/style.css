@@ -927,3 +927,65 @@ body.dark-mode .theme-toggle-btn .theme-icon-moon { display: none; }
   color: var(--color) !important;
 }
 
+/* --- Research Page Collapsible Accordions & Highlights --- */
+.research-accordion {
+  margin-top: 1.8rem;
+  border-top: 1px solid var(--light);
+  padding-top: 1.2rem;
+}
+
+.research-accordion summary {
+  cursor: pointer;
+  font-family: var(--body-font);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  user-select: none;
+  outline: none;
+  list-style: none;
+  transition: color 0.2s ease;
+}
+
+.research-accordion summary::-webkit-details-marker {
+  display: none; /* Hide default browser arrow */
+}
+
+.research-accordion summary:hover {
+  color: var(--text-color);
+}
+
+.research-accordion summary .accordion-arrow {
+  display: inline-block;
+  transition: transform 0.2s ease;
+  font-size: 0.75rem;
+}
+
+.research-accordion[open] summary .accordion-arrow {
+  transform: rotate(90deg);
+}
+
+.research-accordion__content {
+  margin-top: 1rem;
+  background: var(--white);
+  border: 1px solid var(--light);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+  animation: researchSlideDown 0.25s ease-out forwards;
+}
+
+@keyframes researchSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
