@@ -275,7 +275,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <img class="hero-slideshow__img" ${srcAttr} alt="${item.title}">
                 </div>
                 <div class="hero-slideshow__caption">
-                    <span class="gallery__item-cycle" style="margin-bottom: 8px;">Cycle ${item.cycle === 0 ? 'Seed' : item.cycle}</span>
+                    <span class="gallery__item-cycle" style="margin-bottom: 8px;">${item.cycle === 0 ? 'Seed' : 'Cycle ' + item.cycle}</span>
                     <h3 class="hero-slideshow__title">${item.title}</h3>
                     <div class="hero-slideshow__meta">
                         <span class="hero-slideshow__meta-item">by ${item.artist}</span>
