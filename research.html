@@ -68,32 +68,30 @@
               <div style="background: var(--lighter); padding: 2.2rem 2.2rem 2.2rem 2rem; border-radius: var(--border-radius); border: 1px solid var(--light); border-left: 4px solid var(--color); box-shadow: 0 4px 20px rgba(0,0,0,0.02);">
                 <h3 style="margin-top: 0; color: var(--headings-color); border-bottom: 1px solid var(--light); padding-bottom: 0.8rem; margin-bottom: 1.8rem;">1. NetSci 2026 Conference Presentations</h3>
                 
-                <!-- Poster (Primary) -->
-                <div style="margin-bottom: 0.5rem;">
-                  <h4 style="margin-top: 0; font-size: 1.25rem; color: var(--headings-color); display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-                    <span>Research Poster</span>
-                    <span style="font-size: 0.65rem; background: var(--color); color: var(--white); padding: 0.15rem 0.45rem; border-radius: 4px; text-transform: uppercase; font-weight: 700; letter-spacing: 0.06em;">Primary Document</span>
-                  </h4>
-                  <p style="margin-top: 0.5rem; font-size: 1.05rem; color: var(--headings-color); line-height: 1.4;"><strong>Title:</strong> <em>Growing a Sympoietic Art Organism: An Experiment Tracking the Micro-Dynamics of Cultural Evolution</em></p>
-                  <p style="font-size: 0.95rem; line-height: 1.6; margin-top: 0.6rem; color: var(--text-color); opacity: 0.9;">The official scientific poster presented at the NetSci 2026 conference. It details the three experimental phases, topological consolidation, network degree properties, and mutations of visual motifs across cycles.</p>
-                  <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 1rem;">
-                    <button class="btn js-view-pdf" data-pdf="./research/Poster_Vertical_Short_Growing_a_Sympoietic_Art_Organism.pdf" style="display: inline-block; width: auto; margin: 0; padding: 0.55rem 1.4rem; font-size: 0.8rem; font-weight: 600;">View Poster PDF</button>
-                  </div>
-                  <div class="pdf-viewer-container" style="display: none; margin-top: 1.5rem; border: 1px solid var(--light); border-radius: var(--border-radius); overflow: hidden; height: 600px; width: 100%; background: rgba(0,0,0,0.02);"></div>
-                </div>
-
-                <!-- Abstract (Secondary, less emphasized, wrapped in an accordion details block) -->
-                <details class="research-accordion">
+                <!-- Poster (Primary Accordion - Starts Open) -->
+                <details class="research-accordion research-accordion--primary" open>
                   <summary>
                     <span class="accordion-arrow">▶</span>
-                    <span>View Accepted Abstract (Secondary Document)</span>
+                    <span>Research Poster</span>
                   </summary>
                   <div class="research-accordion__content">
-                    <h4 style="margin-top: 0; font-size: 0.95rem; color: var(--headings-color); font-weight: 600; display: flex; align-items: center; justify-content: space-between; gap: 8px;">
-                      <span>Accepted Abstract</span>
-                      <span style="font-size: 0.65rem; border: 1px solid var(--gray-2); color: var(--gray-2); padding: 0.1rem 0.35rem; border-radius: 4px; text-transform: uppercase; font-weight: 600; letter-spacing: 0.05em;">Secondary</span>
-                    </h4>
-                    <p style="font-size: 0.85rem; margin-top: 0.6rem; color: var(--headings-color);"><strong>Title:</strong> <em>Growing a Sympoietic Art Organism: An Experimental Framework for Tracking the Micro-Dynamics of Cultural Evolution</em></p>
+                    <p style="margin-top: 0.5rem; font-size: 1.05rem; color: var(--headings-color); line-height: 1.4;"><strong>Title:</strong> <em>Growing a Sympoietic Art Organism: An Experiment Tracking the Micro-Dynamics of Cultural Evolution</em></p>
+                    <p style="font-size: 0.95rem; line-height: 1.6; margin-top: 0.6rem; color: var(--text-color); opacity: 0.9;">The official scientific poster presented at the NetSci 2026 conference. It details the three experimental phases, topological consolidation, network degree properties, and mutations of visual motifs across cycles.</p>
+                    <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 1rem;">
+                      <button class="btn js-view-pdf" data-pdf="./research/Poster_Vertical_Short_Growing_a_Sympoietic_Art_Organism.pdf" style="display: inline-block; width: auto; margin: 0; padding: 0.55rem 1.4rem; font-size: 0.8rem; font-weight: 600;">View Poster PDF</button>
+                    </div>
+                    <div class="pdf-viewer-container" style="display: none; margin-top: 1.5rem; border: 1px solid var(--light); border-radius: var(--border-radius); overflow: hidden; height: 600px; width: 100%; background: rgba(0,0,0,0.02);"></div>
+                  </div>
+                </details>
+
+                <!-- Abstract (Secondary Accordion - Starts Closed) -->
+                <details class="research-accordion research-accordion--secondary">
+                  <summary>
+                    <span class="accordion-arrow">▶</span>
+                    <span>Accepted Abstract</span>
+                  </summary>
+                  <div class="research-accordion__content">
+                    <p style="font-size: 0.85rem; margin-top: 0; color: var(--headings-color);"><strong>Title:</strong> <em>Growing a Sympoietic Art Organism: An Experimental Framework for Tracking the Micro-Dynamics of Cultural Evolution</em></p>
                     <p style="font-size: 0.85rem; margin-top: 0.5rem; color: var(--gray-2); line-height: 1.5; opacity: 0.95;">The scientific abstract accepted for presentation at the NetSci 2026 conference. It summarizes the endogenous emergence of "rich-get-richer" preferential attachment and giant component consolidation from the feed-forward DAG of citation edges.</p>
                     <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 0.8rem;">
                       <button class="btn js-view-pdf" data-pdf="./research/Sympoietic_Art_Organism_NetSci2026_Abstract.pdf" style="display: inline-block; width: auto; margin: 0; padding: 0.4rem 0.9rem; font-size: 0.75rem; background: transparent; border: 1px solid var(--color); color: var(--color); font-weight: 600; box-shadow: none;">View Abstract PDF</button>
@@ -107,32 +105,30 @@
               <div style="background: var(--lighter); padding: 2.2rem 2.2rem 2.2rem 2rem; border-radius: var(--border-radius); border: 1px solid var(--light); border-left: 4px solid var(--color); box-shadow: 0 4px 20px rgba(0,0,0,0.02);">
                 <h3 style="margin-top: 0; color: var(--headings-color); border-bottom: 1px solid var(--light); padding-bottom: 0.8rem; margin-bottom: 1.8rem;">2. CGS 2025 Project & Computational Reports</h3>
                 
-                <!-- Project Report (Primary) -->
-                <div style="margin-bottom: 0.5rem;">
-                  <h4 style="margin-top: 0; font-size: 1.25rem; color: var(--headings-color); display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-                    <span>CGS 2025 Project Report</span>
-                    <span style="font-size: 0.65rem; background: var(--color); color: var(--white); padding: 0.15rem 0.45rem; border-radius: 4px; text-transform: uppercase; font-weight: 700; letter-spacing: 0.06em;">Primary Document</span>
-                  </h4>
-                  <p style="margin-top: 0.5rem; font-size: 1.05rem; color: var(--headings-color); line-height: 1.4;"><strong>Title:</strong> <em>Complexity Global School 2025 Project Report: Sympoietic Art Organism</em></p>
-                  <p style="font-size: 0.95rem; line-height: 1.6; margin-top: 0.6rem; color: var(--text-color); opacity: 0.9;">The definitive project report outlining the methodology, quantitative network analysis (degree distributions, community detection, clustering coefficients), qualitative semantic phylogeny, and extensive participant feedback surveys.</p>
-                  <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 1rem;">
-                    <button class="btn js-view-pdf" data-pdf="./research/CGS_2025_Project_Report_Sympoietic_Art_Organism.pdf" style="display: inline-block; width: auto; margin: 0; padding: 0.55rem 1.4rem; font-size: 0.8rem; font-weight: 600;">View Project Report PDF</button>
-                  </div>
-                  <div class="pdf-viewer-container" style="display: none; margin-top: 1.5rem; border: 1px solid var(--light); border-radius: var(--border-radius); overflow: hidden; height: 600px; width: 100%; background: rgba(0,0,0,0.02);"></div>
-                </div>
-
-                <!-- Computational Explorations Notebook (Secondary, less emphasized, wrapped in an accordion details block) -->
-                <details class="research-accordion">
+                <!-- Project Report (Primary Accordion - Starts Open) -->
+                <details class="research-accordion research-accordion--primary" open>
                   <summary>
                     <span class="accordion-arrow">▶</span>
-                    <span>View Computational Explorations Notebook (Secondary Document)</span>
+                    <span>CGS 2025 Project Report</span>
                   </summary>
                   <div class="research-accordion__content">
-                    <h4 style="margin-top: 0; font-size: 0.95rem; color: var(--headings-color); font-weight: 600; display: flex; align-items: center; justify-content: space-between; gap: 8px;">
-                      <span>Computational Explorations Notebook</span>
-                      <span style="font-size: 0.65rem; border: 1px solid var(--gray-2); color: var(--gray-2); padding: 0.1rem 0.35rem; border-radius: 4px; text-transform: uppercase; font-weight: 600; letter-spacing: 0.05em;">Secondary</span>
-                    </h4>
-                    <p style="font-size: 0.85rem; margin-top: 0.6rem; color: var(--headings-color);"><strong>Title:</strong> <em>Art organism computational explorations</em></p>
+                    <p style="margin-top: 0.5rem; font-size: 1.05rem; color: var(--headings-color); line-height: 1.4;"><strong>Title:</strong> <em>Complexity Global School 2025 Project Report: Sympoietic Art Organism</em></p>
+                    <p style="font-size: 0.95rem; line-height: 1.6; margin-top: 0.6rem; color: var(--text-color); opacity: 0.9;">The definitive project report outlining the methodology, quantitative network analysis (degree distributions, community detection, clustering coefficients), qualitative semantic phylogeny, and extensive participant feedback surveys.</p>
+                    <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 1rem;">
+                      <button class="btn js-view-pdf" data-pdf="./research/CGS_2025_Project_Report_Sympoietic_Art_Organism.pdf" style="display: inline-block; width: auto; margin: 0; padding: 0.55rem 1.4rem; font-size: 0.8rem; font-weight: 600;">View Project Report PDF</button>
+                    </div>
+                    <div class="pdf-viewer-container" style="display: none; margin-top: 1.5rem; border: 1px solid var(--light); border-radius: var(--border-radius); overflow: hidden; height: 600px; width: 100%; background: rgba(0,0,0,0.02);"></div>
+                  </div>
+                </details>
+
+                <!-- Computational Explorations Notebook (Secondary Accordion - Starts Closed) -->
+                <details class="research-accordion research-accordion--secondary">
+                  <summary>
+                    <span class="accordion-arrow">▶</span>
+                    <span>Computational Explorations Notebook</span>
+                  </summary>
+                  <div class="research-accordion__content">
+                    <p style="font-size: 0.85rem; margin-top: 0; color: var(--headings-color);"><strong>Title:</strong> <em>Art organism computational explorations</em></p>
                     <p style="font-size: 0.85rem; margin-top: 0.5rem; color: var(--gray-2); line-height: 1.5; opacity: 0.95;">A comprehensive 94-page document hosting algorithms, data tables, matrix computations, and network visualizations compiled to audit and analyze the citation patterns of the sympoietic organism.</p>
                     <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 0.8rem;">
                       <button class="btn js-view-pdf" data-pdf="./research/Art_organism_computational_explorations.pdf" style="display: inline-block; width: auto; margin: 0; padding: 0.4rem 0.9rem; font-size: 0.75rem; background: transparent; border: 1px solid var(--color); color: var(--color); font-weight: 600; box-shadow: none;">View Explorations PDF</button>

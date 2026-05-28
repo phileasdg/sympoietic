@@ -935,12 +935,15 @@ body.dark-mode .theme-toggle-btn .theme-icon-moon { display: none; }
   padding-top: 1.2rem;
 }
 
+.research-accordion:first-of-type {
+  border-top: none !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
 .research-accordion summary {
   cursor: pointer;
   font-family: var(--body-font);
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--color);
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -954,10 +957,6 @@ body.dark-mode .theme-toggle-btn .theme-icon-moon { display: none; }
   display: none; /* Hide default browser arrow */
 }
 
-.research-accordion summary:hover {
-  color: var(--text-color);
-}
-
 .research-accordion summary .accordion-arrow {
   display: inline-block;
   transition: transform 0.2s ease;
@@ -968,7 +967,49 @@ body.dark-mode .theme-toggle-btn .theme-icon-moon { display: none; }
   transform: rotate(90deg);
 }
 
-.research-accordion__content {
+/* Primary Accordion (Open by Default) */
+.research-accordion--primary summary {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--headings-color);
+  margin-bottom: 0.5rem;
+}
+
+.research-accordion--primary summary:hover {
+  color: var(--color);
+}
+
+.research-accordion--primary summary .accordion-arrow {
+  color: var(--color);
+  font-size: 0.9rem;
+}
+
+.research-accordion--primary .research-accordion__content {
+  margin-top: 0.5rem;
+  background: transparent;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+  animation: researchSlideDown 0.25s ease-out forwards;
+}
+
+/* Secondary Accordion (Closed by Default) */
+.research-accordion--secondary summary {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color);
+}
+
+.research-accordion--secondary summary:hover {
+  color: var(--text-color);
+}
+
+.research-accordion--secondary summary .accordion-arrow {
+  color: var(--color);
+  font-size: 0.7rem;
+}
+
+.research-accordion--secondary .research-accordion__content {
   margin-top: 1rem;
   background: var(--white);
   border: 1px solid var(--light);
@@ -988,5 +1029,6 @@ body.dark-mode .theme-toggle-btn .theme-icon-moon { display: none; }
     transform: translateY(0);
   }
 }
+
 
 
