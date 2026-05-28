@@ -238,6 +238,29 @@ body.with-hero-slideshow {
   box-shadow: none !important;
 }
 
+@media (max-width: 650px) {
+  .gallery-toolbar {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 12px !important;
+    padding: 15px !important;
+  }
+  .gallery-toolbar__title {
+    text-align: center !important;
+    margin-bottom: 4px !important;
+  }
+  .gallery-toolbar__buttons {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 6px !important;
+  }
+  .gallery-toolbar__btn {
+    width: 100% !important;
+    text-align: center !important;
+    padding: 10px 14px !important;
+  }
+}
+
 /* Collapsible Cycle Sections */
 .gallery-stage-section {
   width: 100%;
