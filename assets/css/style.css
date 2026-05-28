@@ -445,16 +445,20 @@ body.with-hero-slideshow {
   grid-row: 1 / span 2 !important;
   align-self: start !important;
   margin: 0 !important;
-  font-family: monospace !important;
-  font-size: 0.7rem !important;
-  font-weight: 600 !important;
-  letter-spacing: 0.05em !important;
+  font-family: var(--body-font) !important;
+  font-size: 0.65rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
   text-transform: uppercase !important;
-  border: 1px solid var(--color) !important;
+  border: 1px solid rgba(var(--color-rgb), 0.2) !important;
   color: var(--color) !important;
-  background: transparent !important;
-  padding: 2px 6px !important;
-  border-radius: 2px !important;
+  background: rgba(var(--color-rgb), 0.08) !important;
+  padding: 3px 8px !important;
+  border-radius: 12px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  line-height: 1 !important;
   transform: none !important;
 }
 
