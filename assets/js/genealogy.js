@@ -155,7 +155,7 @@
         
         const link = document.createElement('a');
         link.href = `../sympoietic-art-organism/?view=author&highlight=${artistKey}`;
-        link.target = '_blank';
+        link.target = '_self';
         link.className = 'btn';
         link.style.display = 'inline-block';
         link.style.width = 'auto';

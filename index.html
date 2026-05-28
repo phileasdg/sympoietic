@@ -91,7 +91,7 @@ var initPhotoSwipeFromDOM=function(gallerySelector){
             }
             
             // Link to the network viz
-            item.title = captionHtml + ' | <a href="../sympoietic-art-organism/?node=' + encodeURIComponent(filename) + '" target="_blank" style="color: #17BFA3; text-decoration: underline; font-weight: 600; margin-left: 5px;">View in Network</a>';
+            item.title = captionHtml + ' | <a href="../sympoietic-art-organism/?node=' + encodeURIComponent(filename) + '" target="_self" style="color: #17BFA3; text-decoration: underline; font-weight: 600; margin-left: 5px;">View in Network</a>';
             
             if(linkEl.children.length>0){item.msrc=linkEl.children[0].getAttribute('src');}
             item.el=figureEl;
@@ -234,9 +234,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const overlay = document.createElement('div');
             overlay.className = 'gallery__item-overlay';
             overlay.innerHTML = `
-                <span class="gallery__item-cycle">Cycle ${cycle === '0' ? 'Seed' : cycle}</span>
+                <span class="gallery__item-cycle">${cycle === '0' ? 'Seed' : 'Cycle ' + cycle}</span>
                 <h4 class="gallery__item-title">${cleanTitle}</h4>
-                <p class="gallery__item-author">by ${artist} &middot; <span class="gallery__item-genealogy-btn" style="text-decoration: underline; cursor: pointer; color: var(--color);" onclick="event.preventDefault(); event.stopPropagation(); window.open('../sympoietic-art-organism/?node=' + encodeURIComponent('${base}'), '_blank')">View in Network</span></p>
+                <p class="gallery__item-author">by ${artist} &middot; <span class="gallery__item-genealogy-btn" style="text-decoration: underline; cursor: pointer; color: var(--color);" onclick="event.preventDefault(); event.stopPropagation(); window.open('../sympoietic-art-organism/?node=' + encodeURIComponent('${base}'), '_self')">View in Network</span></p>
             `;
             link.appendChild(overlay);
         }
@@ -460,7 +460,7 @@ document.addEventListener('DOMContentLoaded', () => {
             header.className = 'gallery-stage-header';
             header.setAttribute('aria-label', `Toggle Cycle ${cycleNum === 0 ? 'Seed' : cycleNum}`);
             
-            const titleText = cycleNum === 0 ? 'Cycle Seed' : `Cycle ${cycleNum}`;
+            const titleText = cycleNum === 0 ? 'Seed' : `Cycle ${cycleNum}`;
             const countText = cycleItems.length === 1 ? '1 work' : `${cycleItems.length} works`;
 
             header.innerHTML = `
