@@ -220,13 +220,14 @@ body.with-hero-slideshow {
   letter-spacing: 0.05em !important;
   font-weight: 700 !important;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: color 0.15s ease, border-color 0.15s ease;
   width: auto;
 }
 
 .gallery-toolbar__btn:hover {
   transform: none !important;
-  background: rgba(0, 0, 0, 0.03) !important;
+  background: transparent !important;
+  border-color: rgba(0, 0, 0, 0.4) !important;
   color: var(--text-color);
   box-shadow: none;
 }
@@ -911,9 +912,15 @@ body.dark-mode .gallery-toolbar__btn {
   border-color: rgba(255, 255, 255, 0.12) !important;
 }
 
+body.dark-mode .gallery-toolbar__btn:hover {
+  border-color: rgba(255, 255, 255, 0.4) !important;
+  background: transparent !important;
+}
+
 body.dark-mode .gallery-toolbar__btn.active {
   background: #fff !important;
   color: #000 !important;
+  border-color: #fff !important;
 }
 
 /* Research CTA in dark mode */
@@ -1406,4 +1413,108 @@ body.dark-mode button:hover {
   body:not(.light-mode) button:hover {
     box-shadow: 0 6px 16px rgba(var(--color-rgb), 0.18) !important;
   }
+}
+
+/* --- Editorial Prominent Heading Styles --- */
+h1, h2, h3, h4, h5, h6,
+.post__title, .hero h1, .research-section-title, .research-card__title, .hero-slideshow__title {
+  font-weight: 800 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.15 !important;
+}
+
+/* uppercase labels tracking */
+.research-section-title,
+.about-acknowledgements__title,
+.gallery-toolbar__title {
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+  font-weight: 700 !important;
+}
+
+/* --- Animated Underline for Inline Links --- */
+.post__entry a:not(.btn),
+.about-acknowledgements__text a,
+.research-card__desc a,
+.research-card__doc-title a,
+.bio__desc a,
+p a:not(.btn),
+.gallery__item-genealogy-btn {
+  position: relative;
+  text-decoration: none !important;
+  display: inline-block;
+}
+
+.post__entry a:not(.btn)::after,
+.about-acknowledgements__text a::after,
+.research-card__desc a::after,
+.research-card__doc-title a::after,
+.bio__desc a::after,
+p a:not(.btn)::after,
+.gallery__item-genealogy-btn::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: -2px;
+  left: 0;
+  background-color: currentColor;
+  transform-origin: bottom right;
+  transition: transform 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.post__entry a:not(.btn):hover::after,
+.about-acknowledgements__text a:hover::after,
+.research-card__desc a:hover::after,
+.research-card__doc-title a:hover::after,
+.bio__desc a:hover::after,
+p a:not(.btn):hover::after,
+.gallery__item-genealogy-btn::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* --- Focus State Cleanups (No Leftover Highlights) --- */
+a:focus:not(:focus-visible) {
+  color: var(--link-color) !important;
+  outline: none !important;
+}
+
+a.invert:focus:not(:focus-visible) {
+  color: var(--link-color-hover) !important;
+}
+
+.btn:focus:not(:focus-visible),
+[type=button]:focus:not(:focus-visible),
+[type=submit]:focus:not(:focus-visible),
+button:focus:not(:focus-visible),
+.theme-toggle-btn:focus:not(:focus-visible),
+.mobile-sidebar-close:focus:not(:focus-visible),
+.mobile-theme-toggle:focus:not(:focus-visible),
+.gallery-toolbar__btn:focus:not(:focus-visible) {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* --- Animated Underline for Desktop Navbar Top-Level Links --- */
+.navbar .navbar__menu > li > a {
+  position: relative;
+  text-decoration: none !important;
+}
+.navbar .navbar__menu > li > a::after {
+  content: '';
+  position: absolute;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: -4px;
+  left: 0.75rem;
+  width: calc(100% - 1.5rem);
+  background-color: currentColor;
+  transform-origin: bottom right;
+  transition: transform 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.navbar .navbar__menu > li > a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
