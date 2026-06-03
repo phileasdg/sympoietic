@@ -1440,39 +1440,23 @@ h1, h2, h3, h4, h5, h6,
 .bio__desc a,
 p a:not(.btn),
 .gallery__item-genealogy-btn {
-  position: relative;
+  display: inline;
   text-decoration: none !important;
-  display: inline-block;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1.5px;
+  transition: background-size 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.post__entry a:not(.btn)::after,
-.about-acknowledgements__text a::after,
-.research-card__desc a::after,
-.research-card__doc-title a::after,
-.bio__desc a::after,
-p a:not(.btn)::after,
-.gallery__item-genealogy-btn::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 1.5px;
-  bottom: -2px;
-  left: 0;
-  background-color: currentColor;
-  transform-origin: bottom right;
-  transition: transform 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-.post__entry a:not(.btn):hover::after,
-.about-acknowledgements__text a:hover::after,
-.research-card__desc a:hover::after,
-.research-card__doc-title a:hover::after,
-.bio__desc a:hover::after,
-p a:not(.btn):hover::after,
-.gallery__item-genealogy-btn::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+.post__entry a:not(.btn):hover,
+.about-acknowledgements__text a:hover,
+.research-card__desc a:hover,
+.research-card__doc-title a:hover,
+.bio__desc a:hover,
+p a:not(.btn):hover,
+.gallery__item-genealogy-btn:hover {
+  background-size: 100% 1.5px;
 }
 
 /* --- Focus State Cleanups (No Leftover Highlights) --- */
