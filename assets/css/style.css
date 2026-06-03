@@ -488,14 +488,14 @@ body.with-hero-slideshow {
 
 /* Acknowledgements Section on About Page */
 .about-acknowledgements {
-  margin-top: 3.5rem;
-  margin-bottom: 2rem;
-  padding: 2rem !important;
-  background-color: var(--lighter) !important;
-  border: 1px solid var(--light) !important;
-  border-left: 4px solid var(--color) !important;
-  border-radius: var(--border-radius) !important;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.01) !important;
+  margin-top: 5rem !important;
+  margin-bottom: 2rem !important;
+  padding: 2.5rem 0 0 0 !important;
+  background: transparent !important;
+  border: none !important;
+  border-top: 1px solid var(--light) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
 }
 
 .about-acknowledgements__title {
@@ -506,14 +506,25 @@ body.with-hero-slideshow {
   letter-spacing: 0.08em !important;
   color: var(--gray-2) !important;
   margin-bottom: 0.8rem !important;
+  opacity: 0.9 !important;
 }
 
 .about-acknowledgements__text {
-  font-size: 0.8rem !important;
-  line-height: 1.6 !important;
+  font-size: 0.85rem !important;
+  line-height: 1.65 !important;
   color: var(--gray-2) !important;
   margin: 0 !important;
-  opacity: 0.9 !important;
+  opacity: 0.85 !important;
+}
+
+.about-acknowledgements__text a {
+  color: var(--gray-2) !important;
+  text-decoration: underline !important;
+  transition: color 0.2s ease !important;
+}
+
+.about-acknowledgements__text a:hover {
+  color: var(--color) !important;
 }
 
 /* Manifesto Collapsible Panel */
@@ -795,34 +806,38 @@ body.artist-page {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --white: #0f1419;
+    --white: #12161a;
     --black: #FFFFFF;
     --dark: #e2e8f0;
-    --gray-1: #242f3d;
+    --gray-1: #2a323d;
     --gray-2: #94a3b8;
-    --light: #222f3d;
-    --lighter: #141e28;
-    --text-color: #e2e8f0;
-    --headings-color: #f0f4f8;
-    --link-color: #7db8a8;
-    --link-color-hover: #e2e8f0;
-    --border-color: rgba(255, 255, 255, 0.1);
+    --light: #252b35;
+    --lighter: #1a1f26;
+    --color: #3ebfa4;
+    --color-rgb: 62, 191, 164;
+    --text-color: #f8fafc;
+    --headings-color: #f1f5f9;
+    --link-color: #3ebfa4;
+    --link-color-hover: #f8fafc;
+    --border-color: rgba(255, 255, 255, 0.08);
   }
 }
 
 body.dark-mode {
-  --white: #0f1419;
+  --white: #12161a;
   --black: #FFFFFF;
   --dark: #e2e8f0;
-  --gray-1: #242f3d;
+  --gray-1: #2a323d;
   --gray-2: #94a3b8;
-  --light: #222f3d;
-  --lighter: #141e28;
-  --text-color: #e2e8f0;
-  --headings-color: #f0f4f8;
-  --link-color: #7db8a8;
-  --link-color-hover: #e2e8f0;
-  --border-color: rgba(255, 255, 255, 0.1);
+  --light: #252b35;
+  --lighter: #1a1f26;
+  --color: #3ebfa4;
+  --color-rgb: 62, 191, 164;
+  --text-color: #f8fafc;
+  --headings-color: #f1f5f9;
+  --link-color: #3ebfa4;
+  --link-color-hover: #f8fafc;
+  --border-color: rgba(255, 255, 255, 0.08);
 }
 
 /* Force light mode regardless of system pref */
@@ -842,31 +857,31 @@ body.light-mode {
 
 /* Dark mode header & footer overrides */
 body.dark-mode .header {
-  background: #0f1419 !important;
+  background: #12161a !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 @media (prefers-color-scheme: dark) {
   body:not(.light-mode) .header {
-    background: #0f1419 !important;
+    background: #12161a !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   }
 }
 
 body.dark-mode .footer {
-  background: #0f1419 !important;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: transparent !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
 }
 
 /* Gallery item cards in dark mode */
 body.dark-mode .gallery__item {
-  background: #141e28 !important;
+  background: #1a1f26 !important;
   border-color: rgba(255, 255, 255, 0.08) !important;
 }
 
 /* Manifesto cards in dark mode */
 body.dark-mode .manifesto-card {
-  background-color: #141e28 !important;
+  background-color: #1a1f26 !important;
   border-color: rgba(255, 255, 255, 0.08) !important;
 }
 body.dark-mode .manifesto-card__artist {
@@ -879,16 +894,16 @@ body.dark-mode .manifesto-card__text {
 
 /* Slideshow overrides in dark mode */
 body.dark-mode .hero-slideshow {
-  background: #0d1216 !important;
+  background: #12161a !important;
 }
 body.dark-mode .hero-slideshow__caption {
-  background: rgba(20, 30, 40, 0.9) !important;
+  background: rgba(18, 22, 26, 0.9) !important;
   border-color: rgba(255, 255, 255, 0.08) !important;
 }
 
 /* Gallery toolbar in dark mode */
 body.dark-mode .gallery-toolbar {
-  background: rgba(15, 20, 25, 0.95) !important;
+  background: rgba(18, 22, 26, 0.95) !important;
   border-color: rgba(255, 255, 255, 0.08) !important;
 }
 
@@ -903,19 +918,19 @@ body.dark-mode .gallery-toolbar__btn.active {
 
 /* Research CTA in dark mode */
 body.dark-mode .research-cta {
-  background-color: #141e28 !important;
+  background-color: #1a1f26 !important;
   border-color: rgba(255, 255, 255, 0.08) !important;
 }
 
 /* Artist page hero in dark mode */
 body.dark-mode .artist-page-hero {
-  background: #0f1419 !important;
+  background: #12161a !important;
   border-bottom-color: rgba(255, 255, 255, 0.08) !important;
 }
 
 /* Manifesto collapsible in dark mode */
 body.dark-mode .manifesto-collapsible {
-  background-color: #141e28 !important;
+  background-color: #1a1f26 !important;
   border-color: rgba(255, 255, 255, 0.08) !important;
 }
 
@@ -981,56 +996,109 @@ body.dark-mode .theme-toggle-btn .theme-icon-moon { display: none; }
   color: var(--color) !important;
 }
 
-/* --- Research Page Collapsible Accordions & Highlights --- */
-.research-accordion {
-  margin-top: 1.5rem;
+/* --- Research Page Grid & Sleek Cards --- */
+.research-section-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--headings-color);
+  margin-top: 3.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--light);
+  padding-bottom: 0.8rem;
+}
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .research-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .research-section-title {
+    margin-top: 2.5rem;
+    font-size: 1.1rem;
+  }
+}
+
+.research-card {
   background: var(--white);
   border: 1px solid var(--light);
   border-radius: var(--border-radius);
-  padding: 1.5rem;
+  padding: 2.2rem;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02);
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
 }
 
-.research-accordion summary {
-  cursor: pointer;
-  font-family: var(--body-font);
-  font-size: 1.05rem;
+.research-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color);
+  box-shadow: 0 12px 24px rgba(var(--color-rgb), 0.06);
+}
+
+.research-card__tag {
+  font-family: var(--heading-font);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color);
+  margin-bottom: 0.8rem;
+}
+
+.research-card__title {
+  font-size: 1.25rem;
   font-weight: 600;
+  margin: 0 0 0.6rem 0;
   color: var(--headings-color);
-  display: inline-flex;
+  line-height: 1.3;
+}
+
+.research-card__doc-title {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--text-color);
+  opacity: 0.9;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.research-card__desc {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  opacity: 0.75;
+  margin-bottom: 1.8rem;
+  flex-grow: 1;
+}
+
+.research-card__actions {
+  display: flex;
   align-items: center;
-  gap: 8px;
-  user-select: none;
-  outline: none;
-  list-style: none;
-  transition: color 0.2s ease;
+  gap: 1.5rem;
+  margin-top: auto;
 }
 
-.research-accordion summary::-webkit-details-marker {
-  display: none; /* Hide default browser arrow */
-}
-
-.research-accordion summary:hover {
-  color: var(--color);
-}
-
-.research-accordion summary .accordion-arrow {
+.research-card__actions .btn {
   display: inline-block;
-  transition: transform 0.2s ease;
-  font-size: 0.75rem;
-  color: var(--color);
+  width: auto;
+  margin: 0;
+  padding: 0.65rem 1.6rem;
+  font-size: 0.8rem;
+  font-weight: 700;
 }
 
-.research-accordion[open] summary .accordion-arrow {
-  transform: rotate(90deg);
-}
-
-.research-accordion__content {
-  margin-top: 1rem;
-  border-top: 1px dashed var(--light);
-  padding-top: 1rem;
-  animation: researchSlideDown 0.25s ease-out forwards;
+.pdf-viewer-container {
+  animation: researchSlideDown 0.3s ease-out forwards;
 }
 
 @keyframes researchSlideDown {
@@ -1043,7 +1111,6 @@ body.dark-mode .theme-toggle-btn .theme-icon-moon { display: none; }
     transform: translateY(0);
   }
 }
-
 /* --- Mobile Responsive Header & Sidebar Navigation --- */
 @media (max-width: 56.1875em) {
   .header {
@@ -1262,7 +1329,7 @@ body.dark-mode .mobile-menu-footer {
 }
 
 body.dark-mode .mobile-theme-toggle {
-  background: #141e28 !important;
+  background: #1a1f26 !important;
   border-color: rgba(255, 255, 255, 0.08) !important;
 }
 
@@ -1272,4 +1339,71 @@ body.dark-mode .mobile-theme-toggle {
 
 body.dark-mode .mobile-theme-toggle:hover {
   background: rgba(255, 255, 255, 0.04) !important;
+}
+
+/* --- Sleek Minimalist Footer Overrides --- */
+.footer {
+  background: transparent !important;
+  border-radius: 0 !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.06) !important;
+  padding: 1.5rem 0 !important;
+  margin: 3rem 0 0 !important;
+}
+
+body.dark-mode .footer {
+  background: transparent !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  body:not(.light-mode) .footer {
+    background: transparent !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+  }
+}
+
+.footer__copyright {
+  color: var(--gray-2) !important;
+  font-size: 0.8rem !important;
+  padding: 0.2rem 0 !important;
+  letter-spacing: 0.03em;
+  opacity: 0.8;
+}
+
+/* --- Glowing Effects & Button Shadow Adjustments --- */
+/* Globally make button shadow/glow subtler in light mode */
+.btn, [type=button], [type=submit], button {
+  box-shadow: 0 4px 12px rgba(var(--color-rgb), 0.16) !important;
+}
+.btn:hover, [type=button]:hover, [type=submit]:hover, button:hover {
+  box-shadow: 0 6px 20px rgba(var(--color-rgb), 0.24) !important;
+}
+
+/* Make button shadow/glow even subtler in dark mode to align with the sober theme */
+body.dark-mode .btn,
+body.dark-mode [type=button],
+body.dark-mode [type=submit],
+body.dark-mode button {
+  box-shadow: 0 4px 12px rgba(var(--color-rgb), 0.12) !important;
+}
+body.dark-mode .btn:hover,
+body.dark-mode [type=button]:hover,
+body.dark-mode [type=submit]:hover,
+body.dark-mode button:hover {
+  box-shadow: 0 6px 16px rgba(var(--color-rgb), 0.18) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  body:not(.light-mode) .btn,
+  body:not(.light-mode) [type=button],
+  body:not(.light-mode) [type=submit],
+  body:not(.light-mode) button {
+    box-shadow: 0 4px 12px rgba(var(--color-rgb), 0.12) !important;
+  }
+  body:not(.light-mode) .btn:hover,
+  body:not(.light-mode) [type=button]:hover,
+  body:not(.light-mode) [type=submit]:hover,
+  body:not(.light-mode) button:hover {
+    box-shadow: 0 6px 16px rgba(var(--color-rgb), 0.18) !important;
+  }
 }
